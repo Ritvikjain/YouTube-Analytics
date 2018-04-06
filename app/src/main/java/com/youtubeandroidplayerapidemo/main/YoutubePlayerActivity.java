@@ -50,7 +50,7 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity {
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
         mTracker = application.getDefaultTracker();
 
-        mTracker.setScreenName("VideoID-" + videoID);
+        mTracker.setScreenName("Title-" + videoName);
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         myPlaybackEventListener=new MyPlaybackEventListener();
